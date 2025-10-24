@@ -22,7 +22,7 @@ export const Hero: React.FC = () => {
     shadow-[inset_380px_0_250px_#081017,inset_0_-20px_30px_#081017]
   "
     >
-      <div className="absolute z-20 top-1/5 sm:mx-20 text-white flex lg:flex-row flex-col gap-5 justify-between inset-x-0">
+      <div className="absolute z-20 top-1/10 lg:top-1/5 lg:mx-5 text-white flex lg:flex-row flex-col gap-5 justify-between inset-x-0">
         <div>
           <div className="text-3xl sm:text-5xl text-center lg:text-left font-bold ">
             <span className="text-[#FDC65C]">Luxury</span> Chauffeur Service in{" "}
@@ -35,7 +35,7 @@ export const Hero: React.FC = () => {
             Complimentary <br className="hidden sm:block" /> airport waiting,
             real-time flight monitoring & 24/7 support.
           </div>
-          <div className="flex items-center justify-center lg:justify-start gap-2 sm:gap-5 mt-5 sm:mt-10 lg:mt-20 font-semibold">
+          <div className="flex items-center justify-center lg:justify-start gap-2 sm:gap-5 mt-5 sm:mt-3 lg:mt-20 font-semibold">
             <div className="flex gap-1 sm:gap-2 text-sm sm:text-base">
               <Image
                 src="/hero/call.svg"
@@ -63,7 +63,7 @@ export const Hero: React.FC = () => {
               alt="whatsapp"
             />
           </div>
-          <div className="flex justify-center lg:justify-start mt-8 sm:mt-18 mx-3 sm:mx-0">
+          <div className="flex justify-center lg:justify-start mt-3 lg:mt-18 mx-3 sm:mx-0">
             <Carousel className="w-full max-w-md lg:max-w-sm ">
               <CarouselContent>
                 {Array.from({ length: 5 }).map((_, index) => (
@@ -79,22 +79,19 @@ export const Hero: React.FC = () => {
                         <div className="font-semibold">Google Rating</div>
                         <div className="text-lg font-bold flex items-center gap-2">
                           5.0
-                          {Array.from(
-                            { length: 5 },
-                            (_, i) => i + 1
-                          ).map((star) => (
-                            <button
-                              key={star}
-                              type="button"
-                              className={`text-2xl ${
-                                5 >= star
-                                  ? "text-[#FDC65C]"
-                                  : "text-gray-300"
-                              } transition-colors`}
-                            >
-                              ★
-                            </button>
-                          ))}
+                          {Array.from({ length: 5 }, (_, i) => i + 1).map(
+                            (star) => (
+                              <button
+                                key={star}
+                                type="button"
+                                className={`text-2xl ${
+                                  5 >= star ? "text-[#FDC65C]" : "text-gray-300"
+                                } transition-colors`}
+                              >
+                                ★
+                              </button>
+                            )
+                          )}
                         </div>
                       </div>
                     </div>
@@ -110,7 +107,7 @@ export const Hero: React.FC = () => {
             </Carousel>
           </div>
         </div>
-        <div className="self-center lg:self-start w-11/12 lg:w-2/6 backdrop-blur-2xl rounded-lg px-3 py-2 bg-gray-800/40 border border-gray-700">
+        <div className="self-center min-w-fit lg:self-start w-11/12 lg:w-2/6 backdrop-blur-2xl rounded-lg px-3 py-2 bg-gray-800/40 border border-gray-700">
           <div className="flex gap-3">
             <div className="bg-[#223544] flex items-center justify-center gap-2 flex-1 py-1 text-center rounded-full cursor-pointer lg:mt-7 border border-gray-600">
               <TbRoute />
@@ -120,34 +117,37 @@ export const Hero: React.FC = () => {
               <IoMdTime /> Hourly
             </div>
           </div>
-          <div className="mt-3">
-            <label className="flex flex-col gap-1 text-sm font-medium ">
-              Pick Up
-              <div className="bg-[#223544] flex items-center px-5 rounded-lg  border border-gray-500 ">
-                <FaLocationDot className="text-gray-400" />
-                <input
-                  type="text"
-                  placeholder="Enter Pick Up Location"
-                  className=" px-3 py-3 w-full rounded-md focus:outline-none"
-                />
-                <FaEquals className="text-gray-400" />
-              </div>
-            </label>
+          <div className="flex  gap-3 sm:flex-col">
+            <div className="mt-3 flex-1">
+              <label className="flex flex-col gap-1 text-sm font-medium ">
+                Pick Up
+                <div className="bg-[#223544] flex items-center px-5 rounded-lg  border border-gray-500 ">
+                  <FaLocationDot className="text-gray-400" />
+                  <input
+                    type="text"
+                    placeholder="Enter Pick Up Location"
+                    className=" px-3 py-3 w-full rounded-md focus:outline-none"
+                  />
+                  <FaEquals className="text-gray-400" />
+                </div>
+              </label>
+            </div>
+            <div className="mt-3 flex-1">
+              <label className="flex flex-col gap-1 text-sm font-medium ">
+                Drop Off
+                <div className="bg-[#223544] flex items-center px-5 rounded-lg  border border-gray-500 ">
+                  <FaLocationDot className="text-gray-400" />
+                  <input
+                    type="text"
+                    placeholder="Enter Drop Off Location"
+                    className=" px-3 py-3 w-full rounded-md focus:outline-none"
+                  />
+                  <FaEquals className="text-gray-400" />
+                </div>
+              </label>
+            </div>
           </div>
-          <div className="mt-3">
-            <label className="flex flex-col gap-1 text-sm font-medium ">
-              Drop Off
-              <div className="bg-[#223544] flex items-center px-5 rounded-lg  border border-gray-500 ">
-                <FaLocationDot className="text-gray-400" />
-                <input
-                  type="text"
-                  placeholder="Enter Drop Off Location"
-                  className=" px-3 py-3 w-full rounded-md focus:outline-none"
-                />
-                <FaEquals className="text-gray-400" />
-              </div>
-            </label>
-          </div>
+
           <div className="flex gap-1 items-center text-sm text-[#FDC65C] cursor-pointer">
             <GoPlusCircle /> Add Stop
           </div>
@@ -173,11 +173,11 @@ export const Hero: React.FC = () => {
               </div>
             </label>
           </div>
-          <div className="h-0.5 bg-gray-500 my-5"></div>
+          <div className="h-0.5 bg-gray-500 my-1 sm:my-5"></div>
           <div className="flex gap-1 items-center text-sm text-[#FDC65C] cursor-pointer">
             <GoPlusCircle /> Add Return Journey
           </div>
-          <div className="flex gap-3 mt-3 lg:mb-7 flex-col sm:flex-row">
+          <div className="flex gap-3 mt-3 lg:mb-7 ">
             <button className="flex-1 bg-[#FF5302] cursor-pointer py-2 rounded-sm">
               Calculate Price
             </button>
