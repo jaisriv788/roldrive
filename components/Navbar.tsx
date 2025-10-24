@@ -18,8 +18,9 @@ import {
   DropdownMenuShortcut,
 } from "@/components/ui/dropdown-menu";
 import { RiMenuFill } from "react-icons/ri";
+import React from "react";
 
-function Navbar() {
+const Navbar: React.FC = () => {
   return (
     <div className="bg-[#223544] fixed w-screen text-white py-5 px-5 sm:px-14 flex justify-between items-center">
       <div className="flex items-center gap-5">
@@ -35,19 +36,34 @@ function Navbar() {
         </Link>
 
         <div className="hidden lg:flex gap-3">
-          <Link className="hover:text-gray-300 transition ease-in-out duration-300" href="/services">
+          <Link
+            className="hover:text-gray-300 transition ease-in-out duration-300"
+            href="/services"
+          >
             Services
           </Link>
-          <Link className="hover:text-gray-300 transition ease-in-out duration-300" href="/fleet">
+          <Link
+            className="hover:text-gray-300 transition ease-in-out duration-300"
+            href="/fleet"
+          >
             Fleet
           </Link>
-          <Link className="hover:text-gray-300 transition ease-in-out duration-300" href="/businesssolutions">
+          <Link
+            className="hover:text-gray-300 transition ease-in-out duration-300"
+            href="/businesssolutions"
+          >
             Business Solutions
           </Link>
-          <Link className="hover:text-gray-300 transition ease-in-out duration-300" href="/cities">
+          <Link
+            className="hover:text-gray-300 transition ease-in-out duration-300"
+            href="/cities"
+          >
             Cities
           </Link>
-          <Link className="hover:text-gray-300 transition ease-in-out duration-300" href="/airporttransfers">
+          <Link
+            className="hover:text-gray-300 transition ease-in-out duration-300"
+            href="/airporttransfers"
+          >
             Airport Transfers
           </Link>
         </div>
@@ -62,7 +78,7 @@ function Navbar() {
           />
           Contact Us
         </div>
-        <Select defaultValue="english" disableScrollLock>
+        <Select defaultValue="english">
           <SelectTrigger className="w-[70px] border border-gray-500">
             <SelectValue placeholder="Theme" />
           </SelectTrigger>
@@ -132,6 +148,6 @@ function Navbar() {
       </div>
     </div>
   );
-}
+};
 
 export default Navbar;

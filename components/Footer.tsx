@@ -1,6 +1,7 @@
 import Image from "next/image";
+import React from "react";
 
-function Footer() {
+const Footer: React.FC = () => {
   return (
     <div className="bg-[#081017] py-12 px-5 sm:px-14 text-white">
       <div className="flex justify-between lg:flex-row flex-col">
@@ -206,7 +207,7 @@ function Footer() {
       </div>
       <div className="h-px bg-gray-500"></div>
       <div className="mt-3 mb-8 flex gap-3 text-gray-400 text-sm sm:text-base">
-        Copyright ©2024 - RolDrive. All Rights Reserved 
+        Copyright ©2024 - RolDrive. All Rights Reserved
       </div>
     </div>
   );
