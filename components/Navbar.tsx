@@ -22,7 +22,7 @@ import React from "react";
 
 const Navbar: React.FC = () => {
   return (
-    <div className="bg-[#223544] fixed z-50 w-screen text-white py-5 px-5 sm:px-14 flex justify-between items-center">
+    <div className="bg-[#223544] fixed z-20 w-screen text-white py-5 px-5 sm:px-14 flex justify-between items-center">
       <div className="flex items-center gap-5">
         <Link href="/">
           <Image

@@ -6,6 +6,7 @@ import { OccasionReq } from "@/components/OccasionReq";
 import { Quote } from "@/components/Quote";
 import { Services } from "@/components/Services";
 import { Fleet } from "@/components/Fleet";
+import { Testimonial } from "@/components/Testimonial";
 
 function page() {
   return (
@@ -16,6 +17,8 @@ function page() {
       <Services />
       <Fleet />
       <Quote />
+      <Testimonial />
+      <></>
       <Faq />
       <LastPage />
     </div>
