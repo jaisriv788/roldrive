@@ -5,6 +5,7 @@ import { Why } from "@/components/Why";
 import { OccasionReq } from "@/components/OccasionReq";
 import { Quote } from "@/components/Quote";
 import { Services } from "@/components/Services";
+import { Fleet } from "@/components/Fleet";
 
 function page() {
   return (
@@ -13,6 +14,7 @@ function page() {
       <Why />
       <OccasionReq />
       <Services />
+      <Fleet />
       <Quote />
       <Faq />
       <LastPage />
