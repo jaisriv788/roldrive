@@ -4,10 +4,10 @@ import React from "react";
 import { FaArrowUpLong } from "react-icons/fa6";
 
 const Footer: React.FC = () => {
-  const handleScrollToTop = () => {
+  const handleScrollToTop = (): void => {
     window.scrollTo({
       top: 0,
-      behavior: "smooth", // smooth scrolling
+      behavior: "smooth",
     });
   };
 

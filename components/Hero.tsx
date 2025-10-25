@@ -22,7 +22,7 @@ export const Hero: React.FC = () => {
     shadow-[inset_380px_0_250px_#081017,inset_0_-20px_30px_#081017]
   "
     >
-      <div className="absolute z-20 top-1/10 lg:top-1/5  lg:mx-10 xl:mx-20 text-white flex lg:flex-row flex-col gap-5 justify-between inset-x-0">
+      <div className="absolute z-20 top-2/12 lg:top-1/5  lg:mx-10 xl:mx-20 text-white flex lg:flex-row flex-col gap-5 justify-between inset-x-0">
         <div>
           <div className="text-3xl sm:text-5xl text-center lg:text-left font-bold ">
             <span className="text-[#FDC65C]">Luxury</span> Chauffeur Service in{" "}
@@ -30,7 +30,7 @@ export const Hero: React.FC = () => {
             <br className="hidden lg:block" />
             Corporate & VIP Travel
           </div>
-          <div className="mt-5 text-xs sm:text-base text-center lg:text-left hidden sm:block">
+          <div className="mt-5 text-xs sm:text-base text-center lg:text-left">
             Professional chauffeurs, luxury vehicles and all-inclusive pricing.
             Complimentary <br className="hidden sm:block" /> airport waiting,
             real-time flight monitoring & 24/7 support.
@@ -63,7 +63,7 @@ export const Hero: React.FC = () => {
               alt="whatsapp"
             />
           </div>
-          <div className="flex justify-center lg:justify-start mt-3 lg:mt-18 mx-3 sm:mx-0">
+          <div className="flex justify-center lg:justify-start mt-5 lg:mt-18 mx-3 sm:mx-0">
             <Carousel className="w-full max-w-md lg:max-w-sm ">
               <CarouselContent>
                 {Array.from({ length: 5 }).map((_, index) => (
@@ -107,7 +107,7 @@ export const Hero: React.FC = () => {
             </Carousel>
           </div>
         </div>
-        <div className="self-center min-w-fit lg:self-start w-11/12 lg:w-2/6 backdrop-blur-2xl rounded-lg px-3 py-2 bg-gray-800/40 border border-gray-700">
+        <div className="self-center min-w-fit lg:self-start w-11/12 lg:w-2/6 backdrop-blur-2xl rounded-lg px-3 py-5 mt-5 sm:mt-0 bg-gray-800/40 border border-gray-700">
           <div className="flex gap-3">
             <div className="bg-[#223544] flex items-center justify-center gap-2 flex-1 py-1 text-center rounded-full cursor-pointer lg:mt-7 border border-gray-600">
               <TbRoute />
