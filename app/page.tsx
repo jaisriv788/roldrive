@@ -7,6 +7,7 @@ import { Quote } from "@/components/Quote";
 import { Services } from "@/components/Services";
 import { Fleet } from "@/components/Fleet";
 import { Testimonial } from "@/components/Testimonial";
+import { Android } from "@/components/Android";
 
 function page() {
   return (
@@ -18,7 +19,7 @@ function page() {
       <Fleet />
       <Quote />
       <Testimonial />
-      <></>
+      <Android />
       <Faq />
       <LastPage />
     </div>
