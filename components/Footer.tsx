@@ -1,7 +1,16 @@
+"use client";
 import Image from "next/image";
 import React from "react";
+import { FaArrowUpLong } from "react-icons/fa6";
 
 const Footer: React.FC = () => {
+  const handleScrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth", // smooth scrolling
+    });
+  };
+
   return (
     <div className="bg-[#081017] py-12 px-5 sm:px-14 text-white">
       <div className="flex justify-between lg:flex-row flex-col">
@@ -205,12 +214,21 @@ const Footer: React.FC = () => {
           Terms & Condition
         </span>
       </div>
-      <div className="h-px bg-gray-500"></div>
+      <div className="h-px bg-gray-500 relative">
+        <div
+          onClick={handleScrollToTop}
+          className="absolute bg-white/50 rounded-full -top-8 -right-3 sm:-right-8 hover:scale-110 transition ease-in-out duration-300 cursor-pointer"
+        >
+          <div className="bg-gray-500 rounded-full p-3 m-3">
+            <FaArrowUpLong />
+          </div>
+        </div>
+      </div>
       <div className="mt-3 mb-8 flex gap-3 text-gray-400 text-sm sm:text-base">
         Copyright ©2024 - RolDrive. All Rights Reserved
       </div>
     </div>
   );
-}
+};
 
 export default Footer;
