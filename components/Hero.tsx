@@ -22,12 +22,12 @@ export const Hero: React.FC = () => {
     shadow-[inset_380px_0_250px_#081017,inset_0_-20px_30px_#081017]
   "
     >
-      <div className="absolute z-20 top-1/10 lg:top-1/5 lg:mx-5 text-white flex lg:flex-row flex-col gap-5 justify-between inset-x-0">
+      <div className="absolute z-20 top-1/10 lg:top-1/5  lg:mx-10 xl:mx-20 text-white flex lg:flex-row flex-col gap-5 justify-between inset-x-0">
         <div>
           <div className="text-3xl sm:text-5xl text-center lg:text-left font-bold ">
             <span className="text-[#FDC65C]">Luxury</span> Chauffeur Service in{" "}
             <br className="hidden sm:block" /> London – Airport,{" "}
-            <br className="hidden sm:block" />
+            <br className="hidden lg:block" />
             Corporate & VIP Travel
           </div>
           <div className="mt-5 text-xs sm:text-base text-center lg:text-left hidden sm:block">
@@ -117,7 +117,7 @@ export const Hero: React.FC = () => {
               <IoMdTime /> Hourly
             </div>
           </div>
-          <div className="flex  gap-3 sm:flex-col">
+          <div className="flex  gap-3 lg:flex-col">
             <div className="mt-3 flex-1">
               <label className="flex flex-col gap-1 text-sm font-medium ">
                 Pick Up
