@@ -44,12 +44,12 @@ export const Why: React.FC = () => {
           RolDrive delivers a seamless, reliable and comfortable journey every
           time.
         </div>
-        <div className="flex justify-evenly my-auto flex-wrap gap-3">
+        <div className="flex w-full justify-evenly my-auto flex-wrap gap-3">
           {Data.map((item, i) => {
             return (
               <div
                 key={i}
-                className={`text-white text-sm flex flex-col items-center max-w-50 gap-2`}
+                className={`text-white  text-sm flex flex-col items-center max-w-40 sm:max-w-50 gap-2`}
               >
                 <Image src={item.img} width={40} height={20} alt="img" />
                 <div className="font-bold text-center">{item.title}</div>

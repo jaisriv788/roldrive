@@ -30,12 +30,12 @@ export const Hero: React.FC = () => {
             <br className="hidden lg:block" />
             Corporate & VIP Travel
           </div>
-          <div className="mt-5 text-xs sm:text-base text-center lg:text-left block sm:hidden lg:block">
+          <div className="mt-5 text-xs sm:text-base text-center lg:text-left hidden lg:block">
             Professional chauffeurs, luxury vehicles and all-inclusive pricing.
             Complimentary <br className="hidden sm:block" /> airport waiting,
             real-time flight monitoring & 24/7 support.
           </div>
-          <div className="flex items-center justify-center lg:justify-start gap-2 sm:gap-5 mt-5 sm:mt-3 lg:mt-20 font-semibold">
+          <div className="lg:flex hidden  items-center justify-center lg:justify-start gap-2 sm:gap-5 mt-5 sm:mt-3 lg:mt-20 font-semibold">
             <div className="flex gap-1 sm:gap-2 text-sm sm:text-base">
               <Image
                 src="/hero/call.svg"
@@ -107,7 +107,7 @@ export const Hero: React.FC = () => {
             </Carousel>
           </div>
         </div>
-        <div className="self-center min-w-fit lg:self-start w-11/12 lg:w-2/6 backdrop-blur-2xl rounded-lg px-3 py-5 mt-5 sm:mt-0 bg-gray-800/40 border border-gray-700">
+        <div className="self-center min-w-fit lg:self-start w-11/12 lg:w-2/6 backdrop-blur-2xl rounded-lg px-3 py-2 sm:py-5 mx-1 bg-gray-800/40 border border-gray-700">
           <div className="flex gap-3">
             <div className="bg-[#223544] flex items-center justify-center gap-2 flex-1 py-1 text-center rounded-full cursor-pointer lg:mt-7 border border-gray-600">
               <TbRoute />
