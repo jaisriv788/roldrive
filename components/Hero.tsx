@@ -24,13 +24,13 @@ export const Hero: React.FC = () => {
     >
       <div className="absolute z-20 top-2/12 lg:top-1/5  lg:mx-10 xl:mx-20 text-white flex lg:flex-row flex-col gap-5 justify-between inset-x-0">
         <div>
-          <div className="text-3xl sm:text-5xl text-center lg:text-left font-bold ">
+          <div className="text-3xl sm:text-4xl lg:text-5xl text-center lg:text-left font-bold ">
             <span className="text-[#FDC65C]">Luxury</span> Chauffeur Service in{" "}
             <br className="hidden sm:block" /> London – Airport,{" "}
             <br className="hidden lg:block" />
             Corporate & VIP Travel
           </div>
-          <div className="mt-5 text-xs sm:text-base text-center lg:text-left">
+          <div className="mt-5 text-xs sm:text-base text-center lg:text-left block sm:hidden lg:block">
             Professional chauffeurs, luxury vehicles and all-inclusive pricing.
             Complimentary <br className="hidden sm:block" /> airport waiting,
             real-time flight monitoring & 24/7 support.

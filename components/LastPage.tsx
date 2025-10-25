@@ -60,7 +60,7 @@ export const LastPage: React.FC = () => {
             <div className="text-[#FDC65C] italic text-center lg:text-left font-semibold">
               Trusted by leading Companies
             </div>
-            <div className="flex gap-3 mt-3 sm:flex-nowrap flex-wrap sm:justify-start justify-center">
+            <div className="flex gap-3 mt-3 lg:flex-nowrap flex-wrap lg:justify-start justify-center">
               <Image src="/goldman.svg" width={60} height={10} alt="goldman" />
               <Image src="/kpmg.svg" width={60} height={10} alt="kpmg" />
               <Image src="/deloitte.svg" width={60} height={10} alt="deloitte" />
