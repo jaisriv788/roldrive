@@ -25,14 +25,14 @@ const Navbar: React.FC = () => {
     <div className="bg-[#223544] fixed z-50 w-screen text-white py-5 px-5 sm:px-14 flex justify-between items-center">
       <div className="flex items-center gap-5">
         <Link href="/">
-          {/* <Image
+          <Image
             src="/navbar/Frame.svg"
             alt="Navbar frame"
             width={155}
             height={50}
             className="w-[120px] sm:w-[155px] h-auto"
             unoptimized
-          /> */}1
+          />
         </Link>
 
         <div className="hidden lg:flex gap-3">
